@@ -324,7 +324,6 @@ fieldset {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     padding: 20px;
     background-color: #015f47;
 }
@@ -793,10 +792,10 @@ fieldset {
 /* ------------------------------------------------------------------ */
  /*  MEDIA QUERY - MOBILE  */
 
- @media screen and (max-width: 700px){
+ @media screen and (max-width: 600px){
     
     .container {
-       width: 700px;
+       width: 600px;
     }
 
     .wrapper {
