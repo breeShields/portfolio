@@ -159,21 +159,13 @@
 }
 .close {
     font-family: 'Palanquin', sans-serif;
-    /* background: #015f47; */
     color: #015f47 !important;
     line-height: 25px;
     float: right;
-    /* position: absolute; */
-    /* right: 4px; */
-    /* text-align: right; */
-    /* top: 5px; */
-    /* width: 34px;
-    height: 34px; */
     text-decoration: none;
-    font-weight: 300;
-    /* border-radius: 50%; */
-    /* padding-top: 5px; */
+    font-weight: 300; 
 }
+
 .close:hover {
     color: black !important;
 }
@@ -326,6 +318,7 @@ fieldset {
     align-items: center;
     padding: 20px;
     background-color: #015f47;
+    width: 100%;
 }
 
 .footer a {
@@ -894,6 +887,10 @@ fieldset {
 
     .my-contribution p {
         font-weight: 300;
+    }
+
+    .footer {
+        padding: 10px;
     }
 
 }
