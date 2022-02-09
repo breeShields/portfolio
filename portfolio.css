@@ -38,9 +38,10 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 80px;
 }
 
-.header h3 {
+.header a {
     font-family: 'Palanquin', sans-serif;
     font-weight: 400;
     color: #015f47;
@@ -48,6 +49,7 @@
     margin: 15px;
     padding-left: 20px;
     font-size: 18px;
+    text-decoration: none;
     
 }
 .menu {
@@ -72,6 +74,59 @@
 .menu a:hover{
     color: #015f47;
 }
+
+ /* ------------------------------------------------------- */
+/* hamburger */
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    display: none;
+    top: 0;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    font-family: 'Palanquin', sans-serif;
+    color: white;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #015f47;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #015f47;
+    color: white;
+  }
 
 /* ------------------------------------------------------- */
 /* hero */
@@ -158,10 +213,11 @@
     background-image: linear-gradient(#f3f2f2 50%, white 50%);
 }
 .close {
+    /* display: block; */
     font-family: 'Palanquin', sans-serif;
     color: #015f47 !important;
     line-height: 25px;
-    float: right;
+    /* float: right; */
     text-decoration: none;
     font-weight: 300; 
 }
@@ -233,7 +289,6 @@ fieldset {
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
-#contact input[type="url"],
 #contact textarea {
   width: 100%;
   border: 1px solid #ccc;
@@ -245,7 +300,6 @@ fieldset {
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
 #contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
@@ -346,23 +400,39 @@ fieldset {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-
+    padding-bottom: 80px;
     width: 100%;
     padding: 10px;
     background-color: #015f47;
 }
 
-.main h3 {
+.main  .topnav a {
+    font-family: 'Palanquin', sans-serif;
     color: white;
-}
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
 
 .main a {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 400;
     color: white;
+    align-items: left;
+    padding-left: 20px;
+    font-size: 18px;
+    text-decoration: none;  
 }
 
 .main a:hover {
     color: black;
+    background-color: white;
 }
 
 .page-title {
@@ -373,7 +443,6 @@ fieldset {
     justify-content: center;
 }
  
-
 .page-title h1 {
     display: flex;
     flex-direction: column;
@@ -702,15 +771,12 @@ fieldset {
          opacity: 50%; 
      }
     
-
      .work h2 {
-        max-width: 500px;
         font-family: 'Palanquin', sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         color: black;
         padding-top: 5px;
         padding-bottom: 5px;
-        
      }
 
      .work p {
@@ -789,14 +855,35 @@ fieldset {
 /* ------------------------------------------------------------------ */
  /*  MEDIA QUERY - MOBILE  */
 
- @media screen and (max-width: 600px){
+ @media screen and (max-width: 615px){
     
     .container {
-       width: 600px;
+       width: 615px;
     }
 
     .wrapper {
         background-image: linear-gradient(#f3f2f2 40%, white 30%, white 30%);
+    }
+
+    .selector {
+        padding: none;
+        display: block;
+        position: relative;
+    }
+
+    main {
+        padding: none;
+        display: block;
+        position: relative; 
+    }
+
+    .menu-link  {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+        width: 100%;
     }
 
     .page-title h3 {
@@ -820,12 +907,13 @@ fieldset {
     }
 
     .work {
-        margin: 10px;
         max-width: 80%; 
+        padding: 0px;
+        margin: 0px;
      }
     
      .work h2 {
-        max-width: 400px;
+        max-width: 600px;
         font-family: 'Palanquin', sans-serif;
         font-size: 20px;
         color: black;
@@ -896,5 +984,4 @@ fieldset {
         padding: 15px;
         font-size: 16px;
     }
-
 }
