@@ -6,13 +6,25 @@
     padding: 0px;
  }
 
+ /* .logo {
+    padding: 100px;
+    position: absolute;
+    z-index: 9;
+    bottom: -120vw;
+    right: -1vw;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/Asset_4.svg"); */
+/* } */
+
 .container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    grid-gap: 25px;
+    grid-gap: 100px;
     margin-bottom: 20px;
     max-width: 80%;
  }
@@ -27,7 +39,7 @@
      display: flex;
      justify-content: space-between;
      flex-direction: column;
-     align-items: center;
+     align-items: center; 
  }
 
  /* ------------------------------------------------------- */
@@ -46,8 +58,9 @@
     font-weight: 400;
     color: #015f47;
     align-items: left;
-    margin: 15px;
+    margin: 12px;
     padding-left: 20px;
+    padding-right: 20px;
     font-size: 18px;
     text-decoration: none;
     
@@ -480,11 +493,12 @@ fieldset {
  }
     
  .work img {
-    width: 280px;
-    height: 280px;
+    width: 400px;
+    height: 400px;
     object-fit: cover; 
     border-radius: 5%;
     border: 5px solid white;
+    /* margin: space-between; */
  }
  
  .work:hover img {
@@ -515,7 +529,7 @@ fieldset {
     width: 280px;
     font-family: 'Palanquin', sans-serif;
     font-size: 16px;
-    margin: 10px;
+   
  }
  
 
@@ -686,6 +700,7 @@ fieldset {
     
     .container { 
         width: 1280px;
+        grid-gap: 100px;
     }
 
     .work {
@@ -694,8 +709,8 @@ fieldset {
      }
         
     .work img {
-        width: 280px;
-        height: 280px;
+        width: 380px;
+        height: 380px;
         margin: 20px;
         object-fit: cover; 
         border-radius: 5%;
@@ -739,6 +754,7 @@ fieldset {
     
     .container {
        width: 1024px;
+       grid-gap: 50px;
     }
 
     .wrapper {
@@ -763,8 +779,8 @@ fieldset {
      }
         
      .work img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
      }
      
      .work:hover img {
@@ -850,6 +866,45 @@ fieldset {
     }
 }
 
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+ /*  MEDIA QUERY - SMALL TABLET */
+  
+ @media screen and (max-width: 740px){
+    
+    .container {
+       width: 740px;
+    }
+
+    main {
+        padding: none;
+        display: block;
+        position: relative; 
+    }
+
+    .menu-link  {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+        width: 100%;
+    }
+    
+    .work {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 15px;
+        max-width: 75%; 
+     }
+        
+     .work img {
+        width: 300px;
+        height: 300px;
+     }   
+}
 
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
