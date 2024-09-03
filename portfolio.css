@@ -567,6 +567,12 @@ fieldset {
     border-radius: 5%;
     border: 5px solid white;
  }
+
+ .single-image p{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
  
 .work-details {
     padding: 15px;
@@ -595,12 +601,19 @@ fieldset {
     font-size: 18px;
  }
 
+ .video{
+    max-width: 80%;
+    border-radius: 5%;
+    border: 5px solid white;
+    margin: 10px;
+ }
+
 .secondary-image {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap; 
+    margin-bottom: 40px;
 }
 
 .secondary-image video {
@@ -612,23 +625,23 @@ fieldset {
 
 .secondary-image img{
     margin-bottom: 5px;
+    margin-top: 5px;
     max-width: 350px;
     max-height: 350px;
+    width: 400px;
     object-fit: cover; 
     border-radius: 5%;
     border: 5px solid white;
     margin: 10px;
 }
-.single-image p{
-    font-family: 'Palanquin', sans-serif;
-    font-size: 16px;
-    padding-left: 20px;
-}
+
+
 
 .secondary-image p {
     font-family: 'Palanquin', sans-serif;
     font-size: 16px;
-    padding-left: 20px;
+    padding-left: 20px;   
+    text-align: center;
 }
 
 .details {
@@ -640,6 +653,7 @@ fieldset {
 }
 
 .brief {
+    margin-top: 10px;
     padding: 20px;
     width: 35%;
     max-width: 80%;
@@ -818,6 +832,7 @@ fieldset {
 
     .secondary-image {
         display: flex;
+        flex-direction: column; 
         align-items: center;
         justify-content: center;
     }
@@ -904,6 +919,10 @@ fieldset {
         width: 300px;
         height: 300px;
      }   
+
+     .video {
+        max-width: 100%;
+     }
 }
 
 /* ------------------------------------------------------------------ */
@@ -967,7 +986,7 @@ fieldset {
         margin: 0px;
      }
     
-     .work h2 {
+    .work h2 {
         max-width: 600px;
         font-family: 'Palanquin', sans-serif;
         font-size: 20px;
@@ -975,21 +994,25 @@ fieldset {
         padding-top: 5px;
      }
     
-     .work p {
+    .work p {
         width: 400px;
         font-size: 18px;
         font-weight: 300;
      }
 
-     .work-details {
+    .work-details {
          font-size: 16px;
          max-width: 75%;
          padding: 15px;
          margin: 15px;
      }
 
-     .work-details p {
+    .work-details p {
         font-weight: 300;
+    }
+
+    .video {
+        max-width: 90%;
     }
 
     .single-image {
