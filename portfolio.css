@@ -498,7 +498,6 @@ fieldset {
     object-fit: cover; 
     border-radius: 5%;
     border: 5px solid white;
-    /* margin: space-between; */
  }
  
  .work:hover img {
@@ -512,7 +511,7 @@ fieldset {
     justify-content: center;
     flex-wrap: wrap;
     
-    width: 280px;
+    width: 400px;
     font-family: 'Palanquin', sans-serif;
     font-size: 18px;
     color: black;
@@ -525,8 +524,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
-    width: 280px;
+    width: 400px;
     font-family: 'Palanquin', sans-serif;
     font-size: 16px;
    
@@ -608,6 +606,25 @@ fieldset {
     margin: 10px;
  }
 
+.facebook-mockups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+    
+.facebook-mockups img { 
+    margin-bottom: 5px;
+    margin-top: 5px;
+    max-width: 225px;
+    max-height: 450px;
+    width: 400px;
+    border-radius: 5%;
+    border: 5px solid white;
+    margin: 10px;
+ }
+
 .secondary-image {
     display: flex;
     flex-direction: row;
@@ -632,16 +649,45 @@ fieldset {
     object-fit: cover; 
     border-radius: 5%;
     border: 5px solid white;
-    margin: 10px;
+    margin: 20px;
+    
 }
-
-
 
 .secondary-image p {
     font-family: 'Palanquin', sans-serif;
     font-size: 16px;
     padding-left: 20px;   
     text-align: center;
+}
+
+.secondary-image-maxim img{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    max-width: 40%;
+    max-height: 400px;
+    object-fit: cover; 
+    border-radius: 5%;
+    border: 5px solid white;
+    margin: 20px;
+}
+
+.secondary-image-carson{
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.secondary-image-carson img{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    max-width: 20%;
+    max-height: 400px;
+    object-fit: cover; 
+    border-radius: 5%;
+    border: 5px solid white;
+    margin: 10px;
 }
 
 .details {
@@ -714,21 +760,22 @@ fieldset {
     
     .container { 
         width: 1280px;
-        grid-gap: 100px;
+        grid-gap: 120px;
     }
 
     .work {
         margin: 10px;
-        max-width: 27%; 
+        max-width: 25%; 
      }
         
     .work img {
-        width: 380px;
-        height: 380px;
+        width: 350px;
+        height: 350px;
         margin: 20px;
         object-fit: cover; 
         border-radius: 5%;
         border: 5px solid white;
+        margin: 30px;
      }
 
     .work-details {
@@ -741,7 +788,7 @@ fieldset {
     }
 
     .secondary-image img{
-        margin: 20px;
+        margin: 10px;
     }
 
     /* .details {
@@ -768,7 +815,7 @@ fieldset {
     
     .container {
        width: 1024px;
-       grid-gap: 50px;
+       grid-gap: 60px;
     }
 
     .wrapper {
@@ -830,6 +877,13 @@ fieldset {
         margin: 20px;
     }
 
+    .facebook-mockups {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+
     .secondary-image {
         display: flex;
         flex-direction: column; 
@@ -839,6 +893,20 @@ fieldset {
 
     .secondary-image img{
         margin: 20px;
+    }
+
+    .secondary-image-maxim img {
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+
+     .secondary-image-carson img{
+        max-width: 40%;
+        max-height: 400px;
+        
     }
 
     .details {
@@ -923,6 +991,8 @@ fieldset {
      .video {
         max-width: 100%;
      }
+     
+    
 }
 
 /* ------------------------------------------------------------------ */
